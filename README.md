@@ -1,21 +1,81 @@
-[Eng]
+🧟 Project Zomboid B42 MP Local Server Setup / Настройка локального сервера
 
-First, we need to download and install the Project Zomboid mod "B42 Multiplayer - Death Legion" from NexusMods, as well as the Project Zomboid version Build42 "Unstable." I used the version: "B42MP Launcher - Windows (Includes Java)"
+[ENG]
+Prerequisites
 
-Second, run and configure B42MPLauncher.exe once, including the game. Then, download the two .bat files from this git and move them to the game's root folder.
+Project Zomboid installed via Steam
 
-Third, launch your local server (other users will need a local network or a VPN, such as ZeroTier or Radmin, to connect) and connect via localhost or the server IP specified in the file and configured.
+B42 Multiplayer - Death Legion mod from NexusMods
 
-Fourth, have a good time before your character dies.
+1. Install B42 MP Mod
+Download "B42MP Launcher - Windows (Includes Java)" from NexusMods
 
+Run B42MPLauncher.exe and complete initial setup
 
+Launch the game through B42MP launcher at least once
 
-[Rus]
+2. Server Setup
+Download the .bat file from this repository:
 
-Во-первых, мы должны скачать и установить с ресурса NexusMods мод для Project Zomboid - "B42 Multiplayer - Death Legion" и естественно сам Project Zomboid версии Build42 "Unstable". Я использовал версию: "B42MP Launcher - Windows(Includes Java)"
+b42mp_server.bat
 
-Во-вторых, выполнить один запуск и настройку B42MPLauncher.exe, вплоть до игры и затем мы скачиваем два .bat файла этого гита и с заменой переносим в корневую папку игры.
+Place file in your Project Zomboid root directory
 
-В-третьих, для запуска своего локального сервера (Чтобы подключиться другим пользователям нужна локальная сеть или ВПН, например ZeroTier или Radmin) и подключиться через localhost или ip сервера, который указан в файле и подлежит настройке.
+Default location: C:\Program Files (x86)\Steam\steamapps\common\ProjectZomboid\
 
-В-четвёртых, удачно провести время до смерти вашего персонажа.
+3. Configure Server
+Server configuration files are located at:
+
+%USERPROFILE%\Zomboid42\Server\
+Main configuration files:
+
+servertest.ini - Basic server settings
+
+servertest_SandboxVars.lua - Gameplay and zombie settings
+
+4. Launch Server
+Run b42mp_server.bat to start your local server
+
+Server starts on port 16261
+
+Connect via localhost:16261
+
+[RUS]
+Требования:
+
+Установленный Project Zomboid
+
+Мод B42 Multiplayer - Death Legion с NexusMods
+
+1. Установка мода B42 MP
+Скачайте "B42MP Launcher - Windows (Includes Java)" с NexusMods
+
+Запустите B42MPLauncher.exe и завершите первоначальную настройку
+
+Запустите игру через B42MP лаунчер как минимум один раз
+
+2. Настройка сервера
+Скачайте .bat файл из этого репозитория:
+
+b42mp_server.bat
+
+Поместите файл в корневую папку Project Zomboid
+
+Стандартный путь: C:\Program Files (x86)\Steam\steamapps\common\ProjectZomboid\
+
+3. Конфигурация сервера
+Файлы настроек сервера находятся по пути:
+
+%USERPROFILE%\Zomboid42\Server\
+Основные файлы конфигурации:
+
+servertest.ini - Основные настройки сервера
+
+servertest_SandboxVars.lua - Настройки геймплея и зомби
+
+4. Запуск сервера
+Запустите b42mp_server.bat для старта локального сервера
+
+Сервер запускается на порту 16261
+
+Подключайтесь через localhost:16261
